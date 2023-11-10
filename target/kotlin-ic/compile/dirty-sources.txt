@@ -1,0 +1,8 @@
+C:\Users\maiar\Documents\Estudos\petz-scheduling\src\main\kotlin\br\com\pets\schedulling\plugins\CitySchema.kt
+C:\Users\maiar\Documents\Estudos\petz-scheduling\src\main\kotlin\br\com\pets\schedulling\Application.kt
+C:\Users\maiar\Documents\Estudos\petz-scheduling\src\main\kotlin\br\com\pets\schedulling\controller\DBManager.kt
+C:\Users\maiar\Documents\Estudos\petz-scheduling\src\main\kotlin\br\com\pets\schedulling\domain\PetServiceType.kt
+C:\Users\maiar\Documents\Estudos\petz-scheduling\src\main\kotlin\br\com\pets\schedulling\plugins\Serialization.kt
+C:\Users\maiar\Documents\Estudos\petz-scheduling\src\main\kotlin\br\com\pets\schedulling\domain\PetService.kt
+C:\Users\maiar\Documents\Estudos\petz-scheduling\src\main\kotlin\br\com\pets\schedulling\plugins\Databases.kt
+C:\Users\maiar\Documents\Estudos\petz-scheduling\src\main\kotlin\br\com\pets\schedulling\plugins\Routing.kt
