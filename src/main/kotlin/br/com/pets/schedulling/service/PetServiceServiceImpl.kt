@@ -8,18 +8,18 @@ class PetServiceServiceImpl {
     private val dao = PetServiceDao()
 
     fun create(entity: PetService) {
-        dao.create(entity)
+        dao.save(entity)
     }
 
-    fun update(id: Long, entity: PetService) {
+    fun update(id: Int, entity: PetService) {
         dao.update(id, entity)
     }
 
-    fun delete(id: Long) {
-        dao.delete(id)
+    fun deleteAll() {
+        dao.deleteAll()
     }
 
-    fun getById(id: Long): PetService? {
+    fun getById(id: Int): PetService? {
         return dao.getById(id)
     }
 

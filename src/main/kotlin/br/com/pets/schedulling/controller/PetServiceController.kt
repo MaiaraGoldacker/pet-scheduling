@@ -20,20 +20,19 @@ fun Application.configureRouting() {
         }
 
         put("/pet-services/{id}") {
-            val id = call.parameters["id"]?.toLong() ?: throw IllegalArgumentException("Invalid ID")
+            val id = call.parameters["id"]?.toInt() ?: throw IllegalArgumentException("Invalid ID")
             val objectReceived = call.receive<PetService>()
             service.update(id, objectReceived)
             call.respond(HttpStatusCode.OK)
         }
 
-        delete("/pet-services/{id}") {
-            val id = call.parameters["id"]?.toLong() ?: throw IllegalArgumentException("Invalid ID")
-            service.delete(id)
+        delete("/pet-services") {
+            service.deleteAll()
             call.respond(HttpStatusCode.OK)
         }
 
         get("/pet-services/{id}") {
-            val id = call.parameters["id"]?.toLong() ?: throw IllegalArgumentException("Invalid ID")
+            val id = call.parameters["id"]?.toInt() ?: throw IllegalArgumentException("Invalid ID")
             try {
                 val objectReceived = service.getById(id)
                 call.respond(HttpStatusCode.OK, objectReceived.toString())
